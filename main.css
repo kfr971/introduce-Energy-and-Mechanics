@@ -1,4 +1,4 @@
-/* ===== 基本リセット ===== */
+/* ===== 全体リセット ===== */
 * {
   margin: 0;
   padding: 0;
@@ -6,8 +6,8 @@
 }
 
 body {
-  font-family: "Segoe UI", "Helvetica", "Arial", sans-serif;
-  background: #f0f4f8;
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  background-color: #eef3f8;
   color: #333;
   line-height: 1.8;
 }
@@ -15,84 +15,85 @@ body {
 /* ===== ヘッダー ===== */
 header {
   background: linear-gradient(135deg, #005bac, #0084c3);
-  color: #fff;
+  color: white;
   text-align: center;
   padding: 2.5rem 1rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
   font-size: 2.4rem;
   margin-bottom: 0.5rem;
-  letter-spacing: 1px;
 }
 
 header p {
   font-size: 1.1rem;
-  opacity: 0.95;
+  opacity: 0.9;
 }
 
-/* ===== メインコンテンツエリア ===== */
+/* ===== メインコンテンツ ===== */
 main {
   padding: 2rem 5%;
   max-width: 1100px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
-/* ===== セクションカードスタイル ===== */
+/* ===== 各セクションのスタイル ===== */
 section {
-  background: #fff;
+  background-color: #fff;
   border-radius: 12px;
   padding: 2rem;
-  margin-bottom: 2rem;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
   transition: transform 0.2s ease-in-out;
 }
 
 section:hover {
-  transform: scale(1.01);
+  transform: translateY(-3px);
 }
 
-/* ===== 見出しスタイル ===== */
+/* ===== 見出しデザイン ===== */
 h2 {
   font-size: 1.6rem;
   color: #005bac;
   border-left: 6px solid #005bac;
-  padding-left: 0.6rem;
+  padding-left: 0.7rem;
   margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
-/* ===== リスト ===== */
+/* ===== リストスタイル ===== */
 ul {
-  list-style-type: "🔹 ";
-  padding-left: 1.5rem;
+  margin-left: 1.5rem;
 }
 
-li {
+ul li {
   margin-bottom: 0.5rem;
 }
 
-/* ===== ギャラリー画像 ===== */
+/* ===== ギャラリー（横並び） ===== */
 .gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-  margin-top: 1.5rem;
-  margin-bottom: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
 }
 
 .gallery img {
   width: 100%;
-  max-width: 300px;
+  height: auto;
   border-radius: 10px;
-  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .gallery img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+  transform: scale(1.04);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
 }
 
 /* ===== フッター ===== */
@@ -100,31 +101,27 @@ footer {
   background: #333;
   color: white;
   text-align: center;
-  padding: 1.2rem;
+  padding: 1rem;
   font-size: 0.9rem;
   margin-top: 3rem;
+  border-top: 5px solid #005bac;
 }
 
-/* ===== メディアクエリ：スマホ対応 ===== */
+/* ===== モバイル対応 ===== */
 @media (max-width: 768px) {
   header h1 {
     font-size: 1.8rem;
-  }
-
-  header p {
-    font-size: 1rem;
-  }
-
-  section {
-    padding: 1.5rem;
   }
 
   h2 {
     font-size: 1.4rem;
   }
 
+  section {
+    padding: 1.5rem;
+  }
+
   .gallery {
-    flex-direction: column;
-    align-items: center;
+    grid-template-columns: 1fr;
   }
 }
