@@ -3,119 +3,22 @@
 /*
   ここではTailwind CSSのクラスでほとんどのスタイリングを行いますが、
   必要に応じてカスタムスタイルを追加できます。
-  例えば、特定の要素にユニークなアニメーションや複雑なグラデーションを適用する場合など。
 */
+
+/* HTML要素にスムーズスクロールを適用 */
+html {
+    scroll-behavior: smooth;
+}
 
 /* bodyのデフォルトフォントをGoogle FontsのInterに設定 */
 body {
     font-family: 'Inter', sans-serif;
-    /* 派手な感じを出すために、背景に鮮やかなグラデーションを追加 */
-    background: linear-gradient(to bottom right, #81D4FA, #42A5F5, #2196F3); /* Light Blue to Blue */
-    min-height: 100vh; /* ページ全体の高さを確保 */
-    background-attachment: fixed; /* 背景を固定してスクロール時に視差効果 */
-}
-
-/* セクションタイトルに下線とパディングを追加 */
-h2 {
-    /* Tailwind CSSクラスでスタイリング済み */
-    /* 派手な感じを出すために、テキストシャドウを強調 */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    /* ボーダーをより目立つグラデーションに */
-    border-image: linear-gradient(to right, #FFD700, #FF8C00) 1; /* Gold to DarkOrange */
-    border-image-slice: 1;
-}
-
-/* リストアイテムのマーカーの色を調整 */
-ul.list-disc li::marker,
-ol.list-decimal li::marker {
-    color: #FF4500; /* OrangeRed - さらに目立つ色に */
-    font-size: 1.2em; /* マーカーを少し大きく */
-}
-
-/* 画像のレスポンシブな振る舞いを保証 */
-img {
-    max-width: 100%;
-    height: auto;
-    display: block; /* 画像の下の余白をなくす */
-    /* 画像にも強い影と角丸を強調、ホバーアニメーションを強化 */
-    box-shadow: 0 15px 25px -5px rgba(0, 0, 0, 0.2), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
-    border-radius: 1.25rem; /* rounded-2xl相当 */
-    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
-}
-
-img:hover {
-    transform: scale(1.08) rotate(2deg); /* よりダイナミックな拡大と回転 */
-    box-shadow: 0 25px 40px -8px rgba(0, 0, 0, 0.3), 0 12px 15px -8px rgba(0, 0, 0, 0.15);
-}
-
-/* メインコンテンツエリアに強い影と背景を強調 */
-main {
-    background-color: rgba(255, 255, 255, 0.95); /* 半透明の白で背景グラデーションが見えるように */
-    box-shadow: 0 30px 40px -10px rgba(0, 0, 0, 0.25), 0 15px 15px -10px rgba(0, 0, 0, 0.1);
-    border: 2px solid #E0F2FE; /* 軽いボーダーを追加 */
-}
-
-/* 各セクションに背景色と影、ホバーエフェクトを強調 */
-section {
-    background-color: rgba(255, 255, 255, 0.8); /* セクションも半透明に */
-    border-radius: 1rem; /* rounded-xl */
-    box-shadow: 0 8px 15px -3px rgba(0, 0, 0, 0.1), 0 3px 6px -2px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
-}
-
-section:hover {
-    transform: translateY(-8px); /* より大きく上に移動 */
-    box-shadow: 0 20px 30px -8px rgba(0, 0, 0, 0.2), 0 10px 12px -8px rgba(0, 0, 0, 0.1); /* 影をさらに強調 */
-    background-color: rgba(255, 255, 255, 0.95); /* ホバー時に少し不透明に */
-}
-
-/* ヘッダーの学校名にアニメーション */
-.animate-pulse {
-    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-}
-
-@keyframes pulse {
-    0%, 100% {
-        opacity: 1;
-    }
-    50% {
-        opacity: .5;
-    }
-}
-
-/* メッセージセクションの強調 */
-#message-to-students {
-    background: linear-gradient(to right, #FFD700, #FFA500); /* Gold to Orange */
-    border: 5px solid #FF4500; /* OrangeRedの太いボーダー */
-    color: #8B4513; /* SaddleBrown */
-    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5); /* 白いテキストシャドウ */
-}
-
-#message-to-students h2 {
-    color: #8B4513; /* SaddleBrown */
-    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.6);
-    border-bottom-color: #FF8C00; /* DarkOrange */
-}
-
-#message-to-students strong {
-    color: #A0522D; /* Sienna */
-}
-
-/* フッターのスタイル調整 */
-footer {
-    background-color: #333; /* 暗めの色でコントラストを出す */
-    box-shadow: 0 -5px 15px -3px rgba(0, 0, 0, 0.2);
-}
-
-/*
-  モバイルファーストのアプローチで、
-  必要に応じてブレークポイントでスタイルを調整します。
-  Tailwind CSSはデフォルトでモバイルファーストです。
-*/
-@media (min-width: 768px) { /* md (medium) breakpoint */
-    /* MD以上の画面サイズでの調整 */
-}
-
-@media (min-width: 1024px) { /* lg (large) breakpoint */
-    /* LG以上の画面サイズでの調整 */
+    /* 暖かく燃えるような背景グラデーションをさらに強化 */
+    background: linear-gradient(270deg, #FFDAB9, #FF7F50, #FF6347, #DC143C, #B22222); /* PeachPuff, Coral, Tomato, Crimson, FireBrick */
+    background-size: 500% 500%; /* グラデーションのサイズをさらに大きくして、より広範囲で滑らかな動きに */
+    animation: gradientShiftRed 25s ease infinite alternate; /* アニメーション速度を調整し、往復するように */
+    min-height: 100vh;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    color: #333; /* 全体のテキスト色を濃いグレーに */
 }
