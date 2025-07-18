@@ -13,109 +13,140 @@
 </head>
 <body class="font-inter bg-gray-50 text-gray-800">
     <!-- ヘッダーセクション -->
-    <header class="bg-blue-700 text-white p-6 shadow-lg rounded-b-xl">
-        <div class="container mx-auto text-center">
-            <h1 class="text-4xl font-extrabold mb-2">
-                <span class="block text-blue-200 text-2xl">大阪公立大学工業高等専門学校</span>
-                エネルギー機械コース (Mコース)
+    <header class="bg-gradient-to-r from-red-800 to-red-600 text-white p-8 shadow-lg rounded-b-3xl transform transition-all duration-500 hover:scale-102 hover:shadow-red-500/50 relative overflow-hidden">
+        <div class="header-glow"></div> <!-- CSSでグローエフェクトを適用 -->
+        <div class="container mx-auto text-center relative z-10">
+            <h1 class="text-5xl font-extrabold mb-3 tracking-wide">
+                <span class="block text-red-200 text-3xl animate-pulse-strong">大阪公立大学工業高等専門学校</span>
+                <span class="block mt-2">エネルギー機械コース (Mコース)</span>
             </h1>
-            <p class="text-xl font-light">未来を創る君へ！</p>
+            <p class="text-2xl font-light text-red-300">未来を燃やす君へ！</p>
+            <!-- お問い合わせリンクを再配置 -->
+            <nav class="mt-6">
+                <a href="#contact" class="inline-block bg-red-700 hover:bg-red-900 text-white font-bold py-3 px-8 rounded-full shadow-lg transition-all duration-300 transform hover:scale-110 hover:shadow-red-700/50 text-lg">
+                    お問い合わせはこちら
+                </a>
+            </nav>
         </div>
     </header>
 
     <!-- メインコンテンツセクション -->
-    <main class="container mx-auto p-6 my-8 bg-white rounded-xl shadow-lg">
+    <main class="container mx-auto p-8 my-12 bg-white rounded-3xl shadow-xl border border-red-100 relative overflow-hidden">
+        <div class="main-background-pattern"></div> <!-- CSSで背景パターンを適用 -->
+
         <!-- コース紹介セクション -->
-        <section id="introduction" class="mb-12">
-            <h2 class="text-3xl font-bold text-blue-600 mb-6 border-b-4 border-blue-300 pb-2">
+        <section id="introduction" class="mb-16 p-10 bg-white bg-opacity-80 rounded-2xl shadow-md border border-red-50 transition-all duration-300 hover:scale-[1.01] hover:shadow-red-200/50 relative z-10 section-animated-border">
+            <h2 class="text-4xl font-bold text-red-700 mb-8 border-b-4 border-red-300 pb-4">
                 エネルギー機械コースってどんなところ？
             </h2>
-            <p class="text-lg leading-relaxed mb-4">
-                こんにちは！未来のエンジニアを目指す中学生のみんなへ、大阪公立大学工業高等専門学校の「エネルギー機械コース」についてご紹介します！
+            <p class="text-lg leading-relaxed mb-6 text-gray-700">
+                こんにちは、未来のイノベーターを目指す中学生の皆さん！大阪公立大学工業高等専門学校の「エネルギー機械コース」へようこそ！
             </p>
-            <p class="text-lg leading-relaxed mb-4">
-                このコースは、みんなが毎日使っている「エネルギー」と「機械」について深く学ぶ場所です。身の回りには、ガソリンで動く車や、電気を作る発電所など、たくさんの機械がありますよね。これらの機械がどうやってエネルギーを使って動いているのか、そして、地球に優しい新しいエネルギーをどうやって作り出すか、そんなことを勉強します。
+            <p class="text-lg leading-relaxed mb-6 text-gray-700">
+                このコースは、私たちの生活を支える「エネルギー」と「機械」の最先端技術を探求する場所です。自動運転車、ロボット、スマートシティ、そして次世代のクリーンエネルギーシステムなど、未来を形作る技術の核心に触れることができます。
             </p>
-            <p class="text-xl font-semibold text-center text-blue-700 p-4 bg-blue-50 rounded-lg shadow-inner">
-                一言でいうと、<span class="text-blue-800 font-extrabold">「エネルギーに関する問題を解決できる機械のプロ」</span>を育てるコースなんです！
+            <p class="text-2xl font-extrabold text-center text-red-800 p-8 bg-gradient-to-r from-red-50 to-red-100 rounded-xl shadow-lg transform transition-all duration-300 hover:scale-102 hover:shadow-red-300/50">
+                一言でいうと、<span class="text-red-900 font-black text-3xl">「未来のエネルギーと機械をデザインするプロフェッショナル」</span>を育てるコースなんです！
             </p>
-            <div class="mt-8 text-center">
-                <img src="course_overview.jpg" alt="エネルギー機械コースの概要イメージ" class="w-full md:w-3/4 lg:w-1/2 mx-auto rounded-lg shadow-md border-2 border-gray-200" onerror="this.onerror=null;this.src='https://placehold.co/600x300/E0F2FE/1E40AF?text=コース概要イメージ';">
-                <p class="text-sm text-gray-500 mt-2">（エネルギー機械コースのイメージ画像）</p>
+            <div class="mt-10 text-center">
+                <img src="course_overview.jpg" alt="エネルギー機械コースの概要イメージ" class="w-full md:w-3/4 lg:w-1/2 mx-auto rounded-xl shadow-md border-4 border-red-300 transform transition-all duration-300 hover:scale-105 hover:shadow-red-400/50" onerror="this.onerror=null;this.src='https://placehold.co/600x300/FFF0F5/B22222?text=コース概要イメージ';">
+                <p class="text-sm text-gray-500 mt-3">（未来の技術が詰まったエネルギー機械コースのイメージ）</p>
             </div>
         </section>
 
         <!-- 学ぶ内容セクション -->
-        <section id="what-you-learn" class="mb-12">
-            <h2 class="text-3xl font-bold text-blue-600 mb-6 border-b-4 border-blue-300 pb-2">
+        <section id="what-you-learn" class="mb-16 p-10 bg-white bg-opacity-80 rounded-2xl shadow-md border border-red-50 transition-all duration-300 hover:scale-[1.01] hover:shadow-red-200/50 relative z-10 section-animated-border">
+            <h2 class="text-4xl font-bold text-red-700 mb-8 border-b-4 border-red-300 pb-4">
                 機械のプロは何を学ぶの？
             </h2>
-            <p class="text-lg leading-relaxed mb-4">
-                機械のプロになるためには、色々なことを学びます。
+            <p class="text-lg leading-relaxed mb-6 text-gray-700">
+                このコースでは、単なる知識だけでなく、実際に手を動かし、未来を創造するための実践的なスキルを習得します。
             </p>
-            <ul class="list-disc list-inside text-lg leading-relaxed space-y-2 ml-4">
-                <li><strong class="text-blue-700">「ハードウェア」のひみつ</strong>：特に動くモノを対象に、目に見える形のあるモノについて学びます。</li>
-                <li><strong class="text-blue-700">「エネルギー」の流れ</strong>：ガソリンエンジンや風力発電など、エネルギーの変換について学びます。</li>
-                <li><strong class="text-blue-700">「材料」のひみつ</strong>：材料の特性や壊れ方など、材料とその力学について学びます。</li>
-                <li><strong class="text-blue-700">「流体と熱の力学」</strong>：水や空気の流れ、温度や圧力、動力について学びます。</li>
-                <li><strong class="text-blue-700">「加工」の技</strong>：部品の形作りや変形、削り方といった加工技術を学びます。</li>
-                <li><strong class="text-blue-700">「設計」の楽しさ</strong>：機械の動かし方、部品の組み合わせ、費用など、設計について学びます。</li>
-                <li><strong class="text-blue-700">「電気・制御・プログラミング」</strong>：機械を動かすための電気や、コンピュータ制御の基礎も学びます。</li>
+            <ul class="list-disc list-inside text-lg leading-relaxed space-y-3 ml-6 text-gray-700">
+                <li><strong class="text-red-600">「ハードウェア」の深淵</strong>：目に見える機械だけでなく、その内部構造や動作原理を深く理解し、新しいデバイスを設計します。</li>
+                <li><strong class="text-red-600">「エネルギー」の制御</strong>：ガソリンエンジン、風力発電、燃料電池など、様々なエネルギー変換の仕組みを学び、効率的な利用法を開発します。</li>
+                <li><strong class="text-red-600">「材料」の革新</strong>：超軽量・高強度な新素材や、環境に優しい材料の特性を探求し、未来の製品に応用します。</li>
+                <li><strong class="text-red-600">「流体と熱のサイエンス」</strong>：空気や水の流れ、熱の伝わり方をシミュレーションし、効率的なシステムを構築します。</li>
+                <li><strong class="text-red-600">「精密加工」の芸術」</strong>：3Dプリンターやレーザー加工など、最先端の技術でミクロン単位の部品を作り出す技術を習得します。</li>
+                <li><strong class="text-red-600">「システム設計」の思考」</strong>：複雑な機械システム全体を設計し、最適なパフォーマンスを引き出すための論理的思考力を養います。</li>
+                <li><strong class="text-red-600">「AI・制御・プログラミング」</strong>：機械を自律的に動かすためのAI、センサー、プログラミングの知識を習得し、スマートなシステムを開発します。</li>
             </ul>
-            <div class="mt-8 text-center">
-                <img src="learning_activities.png" alt="学ぶ内容のイメージ" class="w-full md:w-3/4 lg:w-1/2 mx-auto rounded-lg shadow-md border-2 border-gray-200" onerror="this.onerror=null;this.src='https://placehold.co/600x300/E0F2FE/1E40AF?text=学ぶ内容イメージ';">
-                <p class="text-sm text-gray-500 mt-2">（実験・実習風景のイメージ画像）</p>
+            <div class="mt-10 text-center">
+                <img src="learning_activities.png" alt="学ぶ内容のイメージ" class="w-full md:w-3/4 lg:w-1/2 mx-auto rounded-xl shadow-md border-4 border-red-300 transform transition-all duration-300 hover:scale-105 hover:shadow-red-400/50" onerror="this.onerror=null;this.src='https://placehold.co/600x300/FFF0F5/B22222?text=学ぶ内容イメージ';">
+                <p class="text-sm text-gray-500 mt-3">（最先端の実験・実習風景のイメージ）</p>
             </div>
         </section>
 
         <!-- 学びのステップセクション -->
-        <section id="learning-steps" class="mb-12">
-            <h2 class="text-3xl font-bold text-blue-600 mb-6 border-b-4 border-blue-300 pb-2">
+        <section id="learning-steps" class="mb-16 p-10 bg-white bg-opacity-80 rounded-2xl shadow-md border border-red-50 transition-all duration-300 hover:scale-[1.01] hover:shadow-red-200/50 relative z-10 section-animated-border">
+            <h2 class="text-4xl font-bold text-red-700 mb-8 border-b-4 border-red-300 pb-4">
                 どんなことが学べるの？
             </h2>
-            <p class="text-lg leading-relaxed mb-4">
-                エネルギー機械コースでは、機械設計の基本を学びながら、エネルギーに関する専門知識を身につけていきます。
+            <p class="text-lg leading-relaxed mb-6 text-gray-700">
+                5年間の高専生活で、段階的に専門知識と実践力を高めていきます。
             </p>
-            <ol class="list-decimal list-inside text-lg leading-relaxed space-y-2 ml-4">
-                <li><strong class="text-blue-700">1年生</strong>：物理や数学、コンピュータ利用の基礎などを学びます。</li>
-                <li><strong class="text-blue-700">2年生から4年生</strong>：実験や実習、座学を通して、機械工学に関する様々な知識と技術を習得します。</li>
-                <li><strong class="text-blue-700">5年生</strong>：企業や大学と協力して、卒業研究に取り組み、機械工学を応用する力を身につけます。</li>
+            <ol class="list-decimal list-inside text-lg leading-relaxed space-y-3 ml-6 text-gray-700">
+                <li><strong class="text-red-600">1年生</strong>：物理、数学、コンピュータサイエンスの基礎を固め、エンジニアリングの土台を築きます。</li>
+                <li><strong class="text-red-600">2年生から4年生</strong>：機械工学の専門知識（熱力学、流体力学、材料力学など）を深く学び、実験や実習で理論を実践に応用します。</li>
+                <li><strong class="text-red-600">5年生</strong>：企業や大学との共同研究を通じて、最先端のテーマに取り組み、卒業研究として未来の技術を形にします。</li>
             </ol>
         </section>
 
         <!-- 進路セクション -->
-        <section id="future-paths" class="mb-12">
-            <h2 class="text-3xl font-bold text-blue-600 mb-6 border-b-4 border-blue-300 pb-2">
+        <section id="future-paths" class="mb-16 p-10 bg-white bg-opacity-80 rounded-2xl shadow-md border border-red-50 transition-all duration-300 hover:scale-[1.01] hover:shadow-red-200/50 relative z-10 section-animated-border">
+            <h2 class="text-4xl font-bold text-red-700 mb-8 border-b-4 border-red-300 pb-4">
                 未来の選択肢は？
             </h2>
-            <p class="text-lg leading-relaxed mb-4">
-                このコースで学んだ知識は、将来の様々な道につながっています。卒業後は、以下のような分野に進むことができます。
+            <p class="text-lg leading-relaxed mb-6 text-gray-700">
+                エネルギー機械コースで得た専門性と実践力は、君の未来の可能性を無限に広げます。
             </p>
-            <ul class="list-disc list-inside text-lg leading-relaxed space-y-2 ml-4">
-                <li><strong class="text-blue-700">専攻科への進学</strong>：さらに専門的な知識を深めるために、専攻科へ進む人も多くいます。</li>
-                <li><strong class="text-blue-700">大学への編入</strong>：大阪公立大学の機械工学科やマテリアル工学科、化学工学科、海洋システム工学科など、様々な大学の工学部系学科へ編入し、より高度な研究・学習に進む道もあります。</li>
-                <li><strong class="text-blue-700">就職</strong>：機械、輸送機械、電気機器、精密部品、設備・装置、環境・インフラなど、多岐にわたる業界で活躍することができます。</li>
+            <ul class="list-disc list-inside text-lg leading-relaxed space-y-3 ml-6 text-gray-700">
+                <li><strong class="text-red-600">専攻科への進学</strong>：さらに高度な専門知識と研究能力を身につけ、技術者としてのキャリアを深めます。</li>
+                <li><strong class="text-red-600">大学への編入</strong>：大阪公立大学をはじめとする国公立大学の工学部系学科へ編入し、より広範な学問分野や研究に挑戦できます。</li>
+                <li><strong class="text-red-600">最先端企業への就職</strong>：自動車、航空宇宙、ロボット、エネルギー、IT、医療機器など、多岐にわたる業界で、未来をリードするエンジニアとして活躍できます。</li>
             </ul>
         </section>
 
         <!-- 中学生へのメッセージ -->
-        <section id="message-to-students" class="text-center p-6 bg-yellow-50 rounded-lg shadow-md">
-            <h2 class="text-3xl font-bold text-yellow-700 mb-4">
+        <section id="message-to-students" class="text-center p-10 bg-gradient-to-r from-orange-400 to-red-500 rounded-2xl border-4 border-red-700 shadow-xl transform transition-all duration-500 hover:scale-105 hover:shadow-red-600/50 animate-glow-fire relative z-10 section-animated-border">
+            <h2 class="text-4xl font-bold text-white mb-6 text-shadow-fire-glow">
                 中学生のみんなへメッセージ！
             </h2>
-            <p class="text-xl font-semibold leading-relaxed text-yellow-800">
-                何事にも全力で取り組み、充実した高専生活を送ってください！！
+            <p class="text-2xl font-semibold leading-relaxed text-yellow-200 text-shadow-fire-glow">
+                君の好奇心と情熱が、未来を動かすエネルギーになる！
             </p>
-            <p class="text-lg text-yellow-800 mt-4">
-                エネルギーや機械に興味がある君！ぜひ大阪公立大学工業高等専門学校のエネルギー機械コースで、未来を創るエンジニアの第一歩を踏み出そう！
+            <p class="text-xl text-white mt-6 text-shadow-fire-glow">
+                エネルギーや機械、そして未来のテクノロジーにワクワクする君！ぜひ大阪公立大学工業高等専門学校のエネルギー機械コースで、世界を変えるエンジニアの第一歩を踏み出そう！
+            </p>
+        </section>
+
+        <!-- お問い合わせセクション -->
+        <section id="contact" class="mt-20 p-10 bg-gradient-to-r from-gray-800 to-gray-900 text-white rounded-2xl shadow-xl border-4 border-red-700 relative overflow-hidden section-animated-border">
+            <div class="contact-background-pattern"></div> <!-- CSSで背景パターンを適用 -->
+            <h2 class="text-4xl font-bold text-red-400 mb-8 border-b-4 border-red-600 pb-4 relative z-10">
+                お問い合わせ
+            </h2>
+            <p class="text-lg leading-relaxed text-gray-200 text-center relative z-10">
+                お問い合わせに関する情報はこちらに表示されます。
+            </p>
+        </section>
+
+        <!-- よくある質問セクション -->
+        <section id="faq" class="mt-20 p-10 bg-gradient-to-r from-red-50 to-orange-50 text-gray-800 rounded-2xl shadow-xl border-4 border-red-300 relative overflow-hidden section-animated-border">
+            <h2 class="text-4xl font-bold text-red-700 mb-8 border-b-4 border-red-300 pb-4">
+                よくある質問 (FAQ)
+            </h2>
+            <p class="text-lg leading-relaxed text-gray-700 text-center relative z-10">
+                よくある質問に関する情報はこちらに表示されます。
             </p>
         </section>
     </main>
 
     <!-- フッターセクション -->
-    <footer class="bg-gray-800 text-white p-4 mt-8 rounded-t-xl">
-        <div class="container mx-auto text-center text-sm">
-            &copy; 2024 大阪公立大学工業高等専門学校 エネルギー機械コース
+    <footer class="bg-red-900 text-red-200 p-6 mt-12 rounded-t-3xl border-t border-red-700 shadow-inner-top relative overflow-hidden">
+        <div class="footer-pattern"></div> <!-- CSSでフッターパターンを適用 -->
+        <div class="container mx-auto text-center text-sm relative z-10">
+            &copy; 2024 大阪公立大学工業高等専門学校 エネルギー機械コース. All Rights Reserved.
         </div>
     </footer>
 </body>
