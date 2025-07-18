@@ -9,17 +9,22 @@
 /* bodyのデフォルトフォントをGoogle FontsのInterに設定 */
 body {
     font-family: 'Inter', sans-serif;
+    /* 派手な感じを出すために、背景にグラデーションを追加 */
+    background: linear-gradient(to bottom right, #E0F7FA, #BBDEFB); /* Light Cyan to Light Blue */
+    min-height: 100vh; /* ページ全体の高さを確保 */
 }
 
 /* セクションタイトルに下線とパディングを追加 */
 h2 {
     /* Tailwind CSSクラスでスタイリング済み */
+    /* 派手な感じを出すために、テキストシャドウを追加 */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 /* リストアイテムのマーカーの色を調整 */
 ul.list-disc li::marker,
 ol.list-decimal li::marker {
-    color: #3B82F6; /* Tailwindのblue-500 */
+    color: #EF4444; /* Tailwindのred-500 - より目立つ色に */
 }
 
 /* 画像のレスポンシブな振る舞いを保証 */
@@ -27,11 +32,29 @@ img {
     max-width: 100%;
     height: auto;
     display: block; /* 画像の下の余白をなくす */
+    /* 画像にも影と角丸を強調 */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    border-radius: 0.75rem; /* rounded-xl相当 */
 }
 
 /* 特定のセクションの背景色や影の調整 */
 /* これらはHTML内でTailwindクラスとして直接指定されています */
 /* 例: <section class="bg-yellow-50 rounded-lg shadow-md"> */
+
+/* メインコンテンツエリアに強い影を追加 */
+main {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* セクションにホバーエフェクトを追加（少し浮き上がる感じ） */
+section {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+section:hover {
+    transform: translateY(-5px); /* 少し上に移動 */
+    box-shadow: 0 15px 20px -5px rgba(0, 0, 0, 0.15), 0 8px 10px -5px rgba(0, 0, 0, 0.08); /* 影を強調 */
+}
 
 /*
   モバイルファーストのアプローチで、
